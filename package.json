@@ -25,6 +25,10 @@
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.2.5",
+    "@embroider/compat": "^0.40.0",
+    "@embroider/core": "^0.40.0",
+    "@embroider/router": "^0.40.0",
+    "@embroider/webpack": "^0.40.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "babel-eslint": "^10.1.0",
@@ -39,6 +43,7 @@
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.1",
     "ember-data": "~3.26.0",
+    "ember-engines": "^0.8.14",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.0.4",
     "ember-load-initializers": "^2.1.2",
@@ -48,7 +53,6 @@
     "ember-resolver": "^8.0.2",
     "ember-source": "~3.26.1",
     "ember-template-lint": "^3.2.0",
-    "ember-welcome-page": "^4.0.0",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-ember": "^10.3.0",
@@ -58,12 +62,18 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "qunit": "^2.14.1",
-    "qunit-dom": "^1.6.0"
+    "qunit-dom": "^1.6.0",
+    "webpack": "^5.36.2"
   },
   "engines": {
     "node": "10.* || >= 12"
   },
   "ember": {
     "edition": "octane"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/lazy-loading-engine"
+    ]
   }
 }
